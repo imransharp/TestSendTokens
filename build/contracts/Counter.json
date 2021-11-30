@@ -1,0 +1,395 @@
+{
+  "contractName": "Counter",
+  "abi": [
+    {
+      "inputs": [],
+      "name": "trasactionCount",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function",
+      "constant": true
+    },
+    {
+      "inputs": [],
+      "name": "AddTransaction",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.7.3+commit.9bfce1f6\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"name\":\"AddTransaction\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"trasactionCount\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"project:/contracts/Counter.sol\":\"Counter\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"project:/contracts/Counter.sol\":{\"keccak256\":\"0xa2846d3a22ef9e20daf4195d5176ede826fcd418d8098cb8daaf7473662e8153\",\"urls\":[\"bzz-raw://cb48cc12bd4f1847b856ec8532ea96e11c4cb54e205088f4eea21d62e9c65395\",\"dweb:/ipfs/QmPM3F4fu1T2RMP6DMK8qDUi6gAmJoVRGhxdATT9BdDF7g\"]}},\"version\":1}",
+  "bytecode": "0x608060405260008055348015601357600080fd5b5060aa806100226000396000f3fe6080604052348015600f57600080fd5b506004361060325760003560e01c8063d8a6e767146037578063e019d07714603f575b600080fd5b603d605b565b005b6045606e565b6040518082815260200191505060405180910390f35b6000808154809291906001019190505550565b6000548156fea26469706673582212201bfb10ebdaa0ec905d605451995f215fe27b0343ad0c82c9ea3224d078ef0b7864736f6c63430007030033",
+  "deployedBytecode": "0x6080604052348015600f57600080fd5b506004361060325760003560e01c8063d8a6e767146037578063e019d07714603f575b600080fd5b603d605b565b005b6045606e565b6040518082815260200191505060405180910390f35b6000808154809291906001019190505550565b6000548156fea26469706673582212201bfb10ebdaa0ec905d605451995f215fe27b0343ad0c82c9ea3224d078ef0b7864736f6c63430007030033",
+  "immutableReferences": {},
+  "generatedSources": [],
+  "deployedGeneratedSources": [],
+  "sourceMap": "37:128:1:-:0;;;89:1;59:31;;37:128;;;;;;;;;;;;;;;;",
+  "deployedSourceMap": "37:128:1:-:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;99:63;;;:::i;:::-;;59:31;;;:::i;:::-;;;;;;;;;;;;;;;;;;;99:63;139:15;;:17;;;;;;;;;;;;;99:63::o;59:31::-;;;;:::o",
+  "source": "pragma solidity >= 0.4.22 <0.9.0;\r\n\r\ncontract Counter {\r\n  uint public trasactionCount = 0;\r\n  \r\n  function AddTransaction() public {\r\n    trasactionCount++;\r\n  }\r\n}",
+  "sourcePath": "D:\\ntp_to_deploy_million_tokens\\contracts\\Counter.sol",
+  "ast": {
+    "absolutePath": "project:/contracts/Counter.sol",
+    "exportedSymbols": {
+      "Counter": [
+        306
+      ]
+    },
+    "id": 307,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 295,
+        "literals": [
+          "solidity",
+          ">=",
+          "0.4",
+          ".22",
+          "<",
+          "0.9",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:33:1"
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "fullyImplemented": true,
+        "id": 306,
+        "linearizedBaseContracts": [
+          306
+        ],
+        "name": "Counter",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "constant": false,
+            "functionSelector": "e019d077",
+            "id": 298,
+            "mutability": "mutable",
+            "name": "trasactionCount",
+            "nodeType": "VariableDeclaration",
+            "scope": 306,
+            "src": "59:31:1",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            },
+            "typeName": {
+              "id": 296,
+              "name": "uint",
+              "nodeType": "ElementaryTypeName",
+              "src": "59:4:1",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "value": {
+              "hexValue": "30",
+              "id": 297,
+              "isConstant": false,
+              "isLValue": false,
+              "isPure": true,
+              "kind": "number",
+              "lValueRequested": false,
+              "nodeType": "Literal",
+              "src": "89:1:1",
+              "typeDescriptions": {
+                "typeIdentifier": "t_rational_0_by_1",
+                "typeString": "int_const 0"
+              },
+              "value": "0"
+            },
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 304,
+              "nodeType": "Block",
+              "src": "132:30:1",
+              "statements": [
+                {
+                  "expression": {
+                    "id": 302,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "nodeType": "UnaryOperation",
+                    "operator": "++",
+                    "prefix": false,
+                    "src": "139:17:1",
+                    "subExpression": {
+                      "id": 301,
+                      "name": "trasactionCount",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 298,
+                      "src": "139:15:1",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "id": 303,
+                  "nodeType": "ExpressionStatement",
+                  "src": "139:17:1"
+                }
+              ]
+            },
+            "functionSelector": "d8a6e767",
+            "id": 305,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "AddTransaction",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 299,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "122:2:1"
+            },
+            "returnParameters": {
+              "id": 300,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "132:0:1"
+            },
+            "scope": 306,
+            "src": "99:63:1",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "public"
+          }
+        ],
+        "scope": 307,
+        "src": "37:128:1"
+      }
+    ],
+    "src": "0:165:1"
+  },
+  "legacyAST": {
+    "attributes": {
+      "absolutePath": "project:/contracts/Counter.sol",
+      "exportedSymbols": {
+        "Counter": [
+          306
+        ]
+      }
+    },
+    "children": [
+      {
+        "attributes": {
+          "literals": [
+            "solidity",
+            ">=",
+            "0.4",
+            ".22",
+            "<",
+            "0.9",
+            ".0"
+          ]
+        },
+        "id": 295,
+        "name": "PragmaDirective",
+        "src": "0:33:1"
+      },
+      {
+        "attributes": {
+          "abstract": false,
+          "baseContracts": [
+            null
+          ],
+          "contractDependencies": [
+            null
+          ],
+          "contractKind": "contract",
+          "fullyImplemented": true,
+          "linearizedBaseContracts": [
+            306
+          ],
+          "name": "Counter",
+          "scope": 307
+        },
+        "children": [
+          {
+            "attributes": {
+              "constant": false,
+              "functionSelector": "e019d077",
+              "mutability": "mutable",
+              "name": "trasactionCount",
+              "scope": 306,
+              "stateVariable": true,
+              "storageLocation": "default",
+              "type": "uint256",
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "name": "uint",
+                  "type": "uint256"
+                },
+                "id": 296,
+                "name": "ElementaryTypeName",
+                "src": "59:4:1"
+              },
+              {
+                "attributes": {
+                  "hexvalue": "30",
+                  "isConstant": false,
+                  "isLValue": false,
+                  "isPure": true,
+                  "lValueRequested": false,
+                  "token": "number",
+                  "type": "int_const 0",
+                  "value": "0"
+                },
+                "id": 297,
+                "name": "Literal",
+                "src": "89:1:1"
+              }
+            ],
+            "id": 298,
+            "name": "VariableDeclaration",
+            "src": "59:31:1"
+          },
+          {
+            "attributes": {
+              "functionSelector": "d8a6e767",
+              "implemented": true,
+              "isConstructor": false,
+              "kind": "function",
+              "modifiers": [
+                null
+              ],
+              "name": "AddTransaction",
+              "scope": 306,
+              "stateMutability": "nonpayable",
+              "virtual": false,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 299,
+                "name": "ParameterList",
+                "src": "122:2:1"
+              },
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 300,
+                "name": "ParameterList",
+                "src": "132:0:1"
+              },
+              {
+                "children": [
+                  {
+                    "children": [
+                      {
+                        "attributes": {
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "operator": "++",
+                          "prefix": false,
+                          "type": "uint256"
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 298,
+                              "type": "uint256",
+                              "value": "trasactionCount"
+                            },
+                            "id": 301,
+                            "name": "Identifier",
+                            "src": "139:15:1"
+                          }
+                        ],
+                        "id": 302,
+                        "name": "UnaryOperation",
+                        "src": "139:17:1"
+                      }
+                    ],
+                    "id": 303,
+                    "name": "ExpressionStatement",
+                    "src": "139:17:1"
+                  }
+                ],
+                "id": 304,
+                "name": "Block",
+                "src": "132:30:1"
+              }
+            ],
+            "id": 305,
+            "name": "FunctionDefinition",
+            "src": "99:63:1"
+          }
+        ],
+        "id": 306,
+        "name": "ContractDefinition",
+        "src": "37:128:1"
+      }
+    ],
+    "id": 307,
+    "name": "SourceUnit",
+    "src": "0:165:1"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.7.3+commit.9bfce1f6.Emscripten.clang"
+  },
+  "networks": {
+    "97": {
+      "events": {},
+      "links": {},
+      "address": "0x5C80352DA1Fedd7EC5B163Dfc40EA1Ea275F83AD",
+      "transactionHash": "0x521ac740baacac46585333cbab25814a6b0cd4e9d88fd000573012b0afb8bc40"
+    }
+  },
+  "schemaVersion": "3.4.3",
+  "updatedAt": "2021-11-30T10:29:06.629Z",
+  "networkType": "ethereum",
+  "devdoc": {
+    "kind": "dev",
+    "methods": {},
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {},
+    "version": 1
+  }
+}
